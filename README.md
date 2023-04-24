@@ -1,4 +1,3 @@
-# crop_calculator
 #Crop calculator to help nonprofts to guide their projects in Africa
 Sustainable Farming for Non-Profits in Africa
 This project is designed to help non-profits in Africa to implement a sustainable farm to feed the population. The project is currently a work in progress.
