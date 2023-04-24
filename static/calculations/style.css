@@ -1,0 +1,60 @@
+/* styles for header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+/* styles for navigation menu */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* styles for main content */
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* styles for footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* styles for input fields */
+input[type="text"], input[type="number"], select {
+  background-color: #f2f2f2 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  padding: 6px 12px !important;
+  font-size: 14px !important;
+}
+
+

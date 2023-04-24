@@ -1,0 +1,42 @@
+{% extends 'calculations/base.html' %}
+
+{% load dict_filters %}
+{% block title %}Results{% endblock %}
+
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'calculations/style.css' %}">
+
+<h1>Results</h1>
+
+<h2>Selected Crops</h2>
+{% for crop in selected_crops %}
+<p>{{ crop }}</p>
+{% endfor %}
+
+<h2>Selected Livestock</h2>
+{% for animal in selected_livestock %}
+<p>{{ animal }}</p>
+{% endfor %}
+
+{% if results %}
+    <h2>Calculation Results</h2>
+    {% for crop in selected_crops %}
+        <p><strong>{{ crop }}:</strong></p>
+        <p>Acres required: {{ results|get_item:crop|get_item:'acres'|floatformat:2 }}</p>
+        <p>Calories: {{ results|get_item:crop|get_item:'calories'|floatformat:2 }}</p>
+        <p>Protein: {{ results|get_item:crop|get_item:'protein'|floatformat:2 }}</p>
+    {% endfor %}
+    {% for animal in selected_livestock %}
+        <p><strong>{{ animal }}:</strong></p>
+        <p>Acres required: {{ results|get_item:animal|get_item:'acres'|floatformat:2 }}</p>
+        <p>Calories: {{ results|get_item:animal|get_item:'calories'|floatformat:2 }}</p>
+        <p>Protein: {{ results|get_item:animal|get_item:'protein'|floatformat:2 }}</p>
+    {% endfor %}
+{% else %}
+    <p>No results to display.</p>
+{% endif %}
+
+<a href="{% url 'calculations:crop_calculator' %}">Back to Calculator</a>
+{% endblock %}
