@@ -73,4 +73,7 @@ This project is licensed under the MIT License.
 
 Name: Marcio Cavalcante de Azevedo
 Email: mar_cio@hotmail.com
-LinkedIn: [https://www.linkedin.com/in/marciohub](https://www.linkedin.com/in/marciohub
+LinkedIn: [www.linkedin.com/in/marcioazevedohub
+](https://www.linkedin.com/in/marcioazevedohub
+
+
